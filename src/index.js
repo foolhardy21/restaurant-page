@@ -1,3 +1,4 @@
+import './style/style.css'
 import { navDiv, menuLink, contactLink, aboutLink } from './pageLoad'
 import aboutDiv from './About'
 import contactDiv from './Contact'
