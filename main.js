@@ -20,13 +20,23 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./src/Contact.js":
+/*!************************!*\
+  !*** ./src/Contact.js ***!
+  \************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst contactDiv = document.createElement('section')\r\ncontactDiv.className = 'contact'\r\n\r\nconst phoneDiv = document.createElement('div')\r\nphoneDiv.innerText = 'phone number'\r\nconst emailDiv = document.createElement('div')\r\nemailDiv.innerText = 'email id'\r\nconst addressDiv = document.createElement('div')\r\naddressDiv.innerText = 'address'\r\n\r\ncontactDiv.appendChild(phoneDiv)\r\ncontactDiv.appendChild(emailDiv)\r\ncontactDiv.appendChild(addressDiv)\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (contactDiv);\n\n//# sourceURL=webpack://restaurant-page/./src/Contact.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _pageLoad__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./pageLoad */ \"./src/pageLoad.js\");\n/* harmony import */ var _About__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./About */ \"./src/About.js\");\n\r\n\r\n\r\nconst contentDiv = document.querySelector('#content')\r\ncontentDiv.appendChild(_pageLoad__WEBPACK_IMPORTED_MODULE_0__.navDiv)\r\n\r\n_pageLoad__WEBPACK_IMPORTED_MODULE_0__.aboutLink.addEventListener('click',() => {\r\n    contentDiv.appendChild(_About__WEBPACK_IMPORTED_MODULE_1__.default)\r\n})\r\n\r\n\r\n\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _pageLoad__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./pageLoad */ \"./src/pageLoad.js\");\n/* harmony import */ var _About__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./About */ \"./src/About.js\");\n/* harmony import */ var _Contact__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Contact */ \"./src/Contact.js\");\n\r\n\r\n\r\n\r\nconst contentDiv = document.querySelector('#content')\r\ncontentDiv.appendChild(_pageLoad__WEBPACK_IMPORTED_MODULE_0__.navDiv)\r\n\r\n_pageLoad__WEBPACK_IMPORTED_MODULE_0__.aboutLink.addEventListener('click',() => {\r\n\r\n    if(contentDiv.childElementCount == 2) {\r\n        \r\n        contentDiv.removeChild(contentDiv.lastChild)\r\n    \r\n    }\r\n    contentDiv.appendChild(_About__WEBPACK_IMPORTED_MODULE_1__.default)\r\n})\r\n\r\n_pageLoad__WEBPACK_IMPORTED_MODULE_0__.contactLink.addEventListener('click',() => {\r\n    \r\n    if(contentDiv.childElementCount == 2) {\r\n        \r\n        contentDiv.removeChild(contentDiv.lastChild)\r\n    \r\n    }\r\n    contentDiv.appendChild(_Contact__WEBPACK_IMPORTED_MODULE_2__.default)\r\n})\r\n\r\n\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
 
 /***/ }),
 
