@@ -37,6 +37,10 @@ body {
                     margin-right: 30px;
                     list-style: none;
                 }
+                li:hover {
+                    cursor: pointer;
+                    text-decoration: underline;
+                }
             }
             
         }
@@ -50,5 +54,6 @@ body {
             text-align: center;
             text-transform: capitalize;
         }
+        
     }
 }

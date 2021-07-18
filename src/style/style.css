@@ -52,6 +52,11 @@ body #content nav ul li {
   list-style: none;
 }
 
+body #content nav ul li:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 body #content .about, body #content .contact, body #content .menu {
   position: absolute;
   top: 50%;
