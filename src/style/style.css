@@ -51,4 +51,16 @@ body #content nav ul li {
   margin-right: 30px;
   list-style: none;
 }
+
+body #content .about {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 2rem;
+  color: #264653;
+  text-align: center;
+  text-transform: capitalize;
+}
 /*# sourceMappingURL=style.css.map */

@@ -10,13 +10,23 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/About.js":
+/*!**********************!*\
+  !*** ./src/About.js ***!
+  \**********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst ABOUT_TEXT =  'asdjhasdlhasdk\\nlaslkdjaskldjakld\\nsakdjasdjhaksjdhakjd\\n'\r\n                        +'asdjhasdjhsdajbacja\\ndkljasdjkasdkjasdkl'  \r\n\r\nconst aboutDiv = document.createElement('section')\r\naboutDiv.className = 'about'\r\naboutDiv.innerText = ABOUT_TEXT\r\n\r\n /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (aboutDiv);    \n\n//# sourceURL=webpack://restaurant-page/./src/About.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _pageLoad__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./pageLoad */ \"./src/pageLoad.js\");\n\r\n\r\nconst contentDiv = document.querySelector('#content')\r\ncontentDiv.appendChild(_pageLoad__WEBPACK_IMPORTED_MODULE_0__.default)\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _pageLoad__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./pageLoad */ \"./src/pageLoad.js\");\n/* harmony import */ var _About__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./About */ \"./src/About.js\");\n\r\n\r\n\r\nconst contentDiv = document.querySelector('#content')\r\ncontentDiv.appendChild(_pageLoad__WEBPACK_IMPORTED_MODULE_0__.navDiv)\r\n\r\n_pageLoad__WEBPACK_IMPORTED_MODULE_0__.aboutLink.addEventListener('click',() => {\r\n    contentDiv.appendChild(_About__WEBPACK_IMPORTED_MODULE_1__.default)\r\n})\r\n\r\n\r\n\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
 
 /***/ }),
 
@@ -26,7 +36,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _pag
   \*************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst RESTAURANT_NAME = 'bread butter'\r\nconst ABOUT = 'about'\r\nconst CONTACT = 'contact us'\r\nconst MENU = 'menu'\r\n\r\nlet navDiv = document.createElement('nav')\r\nnavDiv.innerText = RESTAURANT_NAME\r\n\r\nlet navLinks = document.createElement('ul')\r\n\r\nconst navLink = document.createElement('li')\r\nnavLink.innerText = MENU \r\nnavLinks.appendChild(navLink)\r\nconst navLink1 = document.createElement('li')\r\nnavLink1.innerText = CONTACT\r\nnavLinks.appendChild(navLink1)\r\nconst navLink2 = document.createElement('li')\r\nnavLink2.innerText = ABOUT \r\nnavLinks.appendChild(navLink2)\r\n\r\nnavDiv.appendChild(navLinks)\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (navDiv);\n\n//# sourceURL=webpack://restaurant-page/./src/pageLoad.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"navDiv\": () => (/* binding */ navDiv),\n/* harmony export */   \"menuLink\": () => (/* binding */ menuLink),\n/* harmony export */   \"contactLink\": () => (/* binding */ contactLink),\n/* harmony export */   \"aboutLink\": () => (/* binding */ aboutLink)\n/* harmony export */ });\nconst RESTAURANT_NAME = 'bread butter'\r\nconst ABOUT = 'about'\r\nconst CONTACT = 'contact us'\r\nconst MENU = 'menu'\r\n\r\nlet navDiv = document.createElement('nav')\r\nnavDiv.innerText = RESTAURANT_NAME\r\n\r\nlet navLinks = document.createElement('ul')\r\n\r\nconst menuLink = document.createElement('li')\r\nmenuLink.innerText = MENU \r\nnavLinks.appendChild(menuLink)\r\nconst contactLink = document.createElement('li')\r\ncontactLink.innerText = CONTACT\r\nnavLinks.appendChild(contactLink)\r\nconst aboutLink = document.createElement('li')\r\naboutLink.innerText = ABOUT \r\nnavLinks.appendChild(aboutLink)\r\n\r\nnavDiv.appendChild(navLinks)\r\n\r\n \n\n//# sourceURL=webpack://restaurant-page/./src/pageLoad.js?");
 
 /***/ })
 

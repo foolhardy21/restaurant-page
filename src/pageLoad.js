@@ -8,16 +8,16 @@ navDiv.innerText = RESTAURANT_NAME
 
 let navLinks = document.createElement('ul')
 
-const navLink = document.createElement('li')
-navLink.innerText = MENU 
-navLinks.appendChild(navLink)
-const navLink1 = document.createElement('li')
-navLink1.innerText = CONTACT
-navLinks.appendChild(navLink1)
-const navLink2 = document.createElement('li')
-navLink2.innerText = ABOUT 
-navLinks.appendChild(navLink2)
+const menuLink = document.createElement('li')
+menuLink.innerText = MENU 
+navLinks.appendChild(menuLink)
+const contactLink = document.createElement('li')
+contactLink.innerText = CONTACT
+navLinks.appendChild(contactLink)
+const aboutLink = document.createElement('li')
+aboutLink.innerText = ABOUT 
+navLinks.appendChild(aboutLink)
 
 navDiv.appendChild(navLinks)
 
-export default navDiv
+export { navDiv, menuLink, contactLink, aboutLink } 
