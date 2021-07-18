@@ -1,6 +1,7 @@
 import { navDiv, menuLink, contactLink, aboutLink } from './pageLoad'
 import aboutDiv from './About'
 import contactDiv from './Contact'
+import menuDiv from './Menu'
 
 const contentDiv = document.querySelector('#content')
 contentDiv.appendChild(navDiv)
@@ -23,5 +24,15 @@ contactLink.addEventListener('click',() => {
     
     }
     contentDiv.appendChild(contactDiv)
+})
+
+menuLink.addEventListener('click',() => {
+    
+    if(contentDiv.childElementCount == 2) {
+        
+        contentDiv.removeChild(contentDiv.lastChild)
+    
+    }
+    contentDiv.appendChild(menuDiv)
 })
 

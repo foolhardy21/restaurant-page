@@ -52,7 +52,7 @@ body #content nav ul li {
   list-style: none;
 }
 
-body #content .about, body #content .contact {
+body #content .about, body #content .contact, body #content .menu {
   position: absolute;
   top: 50%;
   left: 50%;
