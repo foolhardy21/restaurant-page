@@ -9,6 +9,8 @@
   "author": "foolhardy21",
   "license": "ISC",
   "devDependencies": {
+    "css-loader": "^6.1.0",
+    "style-loader": "^3.1.0",
     "webpack": "^5.45.1",
     "webpack-cli": "^4.7.2"
   }
